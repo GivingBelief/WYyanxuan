@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+/* 清除浮动 */
+.clear-fix::after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+}
+
+.clear-fix {
+  zoom: 1;
+}
+
+body, ul, p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+input, button {
+  outline: none;
+}
+
+/* 爆品样式 */
+.hot {
+  color: #fff;
+  font-size: 13px;
+  background-color: #F28F2D;
+  padding: 1px 5px;
+  margin-right: 5px;
+}
+
+/* 满赠样式 */
+.full {
+  background-color: #e36844;
+  padding: 3px;
+  color: #fff;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+/* 加价购样式 */
+.increase {
+  color: #fff;
+  padding: 1px 5px;
+  font-size: 13px;
+  background-color: #E36844;
+}
+
+/* App特惠 */
+.app {
+  color: #A94528;
+  background-color: #F8BC59;
+  margin-left: 5px;
+  padding: 1px 5px;
+  font-size: 13px;
+}
+
+/* 第六栏,第七栏,第八栏公共的下边距 */
+.goods-six, .goods-seven, .goods-enight {
+  padding-bottom: 20px;
+}
+
+/* 所有钱的样式 */
+.money {
+  color: #d4282d;
+  font-size: 15px;
+}
+
+/* 控制鼠标移上图片变大样式 */
+.img-move {
+  overflow: hidden;
+}
+
+.img-move img {
+
+  transition: all 1s;
+
+}
+
+.img-move img:hover {
+  transform: scale(1.05);
+}
+
+/* 图片上的按钮相同样式 */
+.button {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: #D0C4AF;
+  color: #fff;
+  z-index: 500;
+  border-radius: 50%;
+  border: none;
+  font-size: 25px;
+  top: 0;
+  top: 50%;
+  margin-top: -25px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b4a078;
+}
+
+.btn-left {
+  left: 80px;
+  background-image: url("../images/icon-normal.png");
+  background-position: 0px -4700px;
+}
+
+.btn-right {
+  right: 80px;
+  background-image: url("../images/icon-normal.png");
+  background-position: 0px -4880px;
+}
+
+.btn-left-two {
+  left: -40px;
+}
+
+.btn-right-two {
+  right: -40px;
+}
+
+/* 左边定位盒子的下边框*/
+.fixed-left ul li:not(.left-last) {
+  border-bottom: 1px solid #ccc;
+}
+
+.fixed-left ul li:not(.left-first) a {
+  display: inline-block;
+  width: 50px;
+  height: 35px;
+  /*background-color: #00ff00;*/
+  font-size: 12px;
+  margin-left: 35px;
+  font-size: 13px;
+  margin-top: 3px;
+
+}
+
+.red-wored {
+  color: #BB3343;
+  font-weight: 600;
+}
+
+
+/*左边盒子背景图片相同样式*/
+.fixed-left ul li:not(.left-first) {
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  background-position: -2px 2px;
+}
+.fixed-left ul li a.as:hover{
+  color: #BB3343;
+}
+
+
